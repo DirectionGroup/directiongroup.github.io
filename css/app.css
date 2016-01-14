@@ -3,14 +3,33 @@ body {
 }
 
 body, h2, h3, h4, h5, h6, p {
-	/*font-family: 'Yanone Kaffeesatz', sans-serif;*/
 	font-family: 'Open Sans', sans-serif;
 }
 
 
 .text-hero {
-	/*font-family: 'Libre Baskerville', serif;*/
 	font-family: 'Roboto Slab', serif;
 	font-size: 4em;
 	margin: 2em 1em;
+}
+
+#dot-map-svg path {
+	position: fixed;
+	top: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.3;
+	fill: #fff;
+}
+
+.cls-1{
+	fill:none;
+	stroke:#dad9d6;
+	stroke-width:0.6px;
+	transition: stroke 0.3s;
+}
+
+.cls-2{
+	fill:#dad9d6;
 }
