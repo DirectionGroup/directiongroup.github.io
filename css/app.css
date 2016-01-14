@@ -13,13 +13,16 @@ body, h2, h3, h4, h5, h6, p {
 	margin: 2em 1em;
 }
 
-#dot-map-svg path {
+#dot-map-svg {
 	position: fixed;
 	top: 0;
 	height: 100vh;
 	width: 100%;
 	z-index: -1;
 	opacity: 0.3;
+}
+
+#dot-map-svg path {
 	fill: #fff;
 }
 
@@ -27,9 +30,14 @@ body, h2, h3, h4, h5, h6, p {
 	fill:none;
 	stroke:#dad9d6;
 	stroke-width:0.6px;
-	transition: stroke 0.3s;
+	transition: opacity 0.5s;
 }
 
 .cls-2{
 	fill:#dad9d6;
+}
+
+.variant {
+	opacity: 0;
+	transition: opacity 0.3s ease-out;
 }
